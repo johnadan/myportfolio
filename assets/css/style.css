@@ -12,18 +12,23 @@
 
 .jumbotron {
 	/*border:5px solid white;*/
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.2);
 	/*background:rgba(128,128,128,.75);*/
 	text-align: center;
+	/*background-color: transparent;*/
 	margin-top: 50px;
+	/*padding-top: 25vh;*/
+	/*padding-bottom: 35vh;*/
 	/*background: #617073;*/
 	/*background:#596669;*/
 }
 
 #portfolio, #home, #skills, #contact {
 	height: 100vh;
+	margin-top: 80px;
 	/*background: #596669;*/
 	z-index: 1;
+	/*background-color: transparent;*/
 	/*background:url(../videos/programming.mp4);*/
 }
 
@@ -33,7 +38,40 @@
 	/*background:url(../videos/programming.mp4);*/
 	z-index: 1;
 	color: white;
+	overflow: hidden;
 }
+
+/*.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}*/
+
+h4 {
+	text-align: left;
+}
+
+#name, #developer {
+	overflow: hidden;
+}
+
+.avatar{
+	/*float: left;
+	width: 200px;*/
+	/*height: 150px;*/
+	/*margin-left: 75px;*/
+	border-radius: 45%;
+	/*background-color: #D6E9FE;*/
+}
+
+/*#myavatar, #avatartext {
+	float: left;
+	display:inline-block;
+}*/
+
+/*#avatartext {
+	margin: 10px;
+}*/
 
 #video-background {
 	/*background:url(//videos/programming.mp4);*/
@@ -63,7 +101,7 @@
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
- background: url(//videos/programming.mp4) no-repeat;
+ background: url(../videos/programming.mp4) no-repeat;
   background-size: cover;
   transition: 1s opacity;
 }
@@ -124,5 +162,7 @@ a:link, a:visited {
 
 /*Mobile*/
 @media only screen and (max-width: 400px) {
-	background: #596669;
+	#video-background {
+		background-image: url(../images/mb-bg.jpeg);
+	}
 }
