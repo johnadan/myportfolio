@@ -5,10 +5,58 @@
 	color: white;
 }
 
+/*@import "bootstrap-social.less";*/
+
 /*body {
   margin: 0;
   background: #000; 
 }*/
+
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  /*justify-content:;*/
+  text-decoration: none;
+  margin: 5px 2px;
+  /*height: 50px;
+  object-fit: cover;*/
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #fd1d1d;
+  color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
+
+.fa-gitlab {
+  background: #ff6600;
+  color: white;
+}
 
 .jumbotron {
 	/*border:5px solid white;*/
@@ -23,12 +71,15 @@
 	/*background:#596669;*/
 }
 
-#portfolio, #home, #skills, #contact {
-	height: 100vh;
+#portfolio, #home, #skills, #contact, #social {
 	/*background: #596669;*/
-	z-index: 1;
 	/*background-color: transparent;*/
 	/*background:url(../videos/programming.mp4);*/
+	text-align: center;
+	/*height: 100vh;*/
+	z-index: 1;
+	margin-bottom:20vh;
+	height:10vh;
 }
 
 .navbar {
@@ -52,8 +103,8 @@ label {
 	/*text-align: justify;*/
 }
 
-#nameinput, #emailinput, #html, #css {
-	/*text-align: justify;*/
+#skill1, #skill2, #skill3 {
+	text-align: justify;
 }
 
 /*.sticky {
@@ -84,6 +135,11 @@ textarea {
 	border-radius: 50%;
 	object-fit: cover;
 	/*background-color: #D6E9FE;*/
+}
+
+#github {
+	object-fit: cover;
+	border-radius: 50%;
 }
 
 #myavatar {
@@ -161,20 +217,25 @@ body {
 	margin: 0px;
 }
 
-#home, footer {
-	padding: 30px;
+#home, #portfolio, #skills, #contact {
+	/*padding: 30px;*/
 	/*box-sizing: border-box;*/
-	text-align: center;
-	margin-bottom:20vh;
+	/*margin-bottom:20vh;*/
+	/*height:25vh;*/
 } 
+
+footer {
+	padding: 30px;
+	text-align: center;
+}
 
 a:link, a:visited {
 	color: white;
  }
 
-#port{
+/*#portfolio, #home, #skills, #contact {
 	height:25vh;
-}
+}*/
 /*.clear:after {
 	display: block;
 	content: "";
@@ -189,15 +250,15 @@ a:link, a:visited {
 
 /*Tablet*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+	/*@import "bootstrap-social.less";*/
 } 
 
 /*Mobile*/
 @media only screen and (max-width: 400px) {
+	/*@import "bootstrap-social.less";*/
 	#video-background {
 		display: none;
-
 	}
-
 	body {
 		background-image: url(../images/mb-bg.jpeg);
 		background-size: cover;
@@ -207,8 +268,10 @@ a:link, a:visited {
 		  max-width: 100% ;
 		  /*height: auto ;*/
 	}
-
-
+	#home, #portfolio, #skills, #contact {
+		padding: 30px;
+	text-align: center;
+	}
 /*	background-image {
 		width: auto;
 	  max-width: 100%;

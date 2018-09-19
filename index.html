@@ -6,9 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- bootstrap social -->
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-social.css"> -->
 
 	<!-- animate css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
@@ -28,8 +32,8 @@
 </head>
 <body>
 
-	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id=navbar>
-	  <a class="navbar-brand" href="#">John McLem Adan</a>
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark mb-5" id="navbar">
+	  <a class="navbar-brand" href="#home">John McLem Adan</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -40,13 +44,16 @@
 	        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#port">Portfolio</a>
+	        <a class="nav-link" href="#portfolio">Portfolio</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="#skills">Skills</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="#contact">Contact</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#social">Connect</a>
 	      </li>
 	    </ul>
 	    <!-- <form class="form-inline my-2 my-lg-0">
@@ -72,7 +79,9 @@
 	  <source src="assets/videos/programming.mp4" type="video/mp4">
 	</video> <!-- end of video background -->	
 
-	<div class="container-fluid" id="home">
+	<div id="home">&nbsp;</div>
+
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
 			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
@@ -83,12 +92,12 @@
 							<div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
 								<img class="avatar img-fluid" src="assets/images/me2.png">
 							</div>
-							<div class="col-lg-7 col-md-8 col-sm-8 col-xs-8 text-justify">
+							<div class="col-lg-7 col-md-8 col-sm-8 col-xs-8 text-left">
 								<!-- <h1 class="display-5" id="name">John McLem Adan</h1> -->
-								<h3 class="display-5">Hi!</h3>
-							    <h3 class="display-5">I'm <strong>John McLem Adan</strong>,</h3>
-							    <h4 class="display-6">and I'm a <strong>Full-Stack Web Developer</strong></h4>
-							    <h4 class="display-6">With every line of code, I strive to make the web a better place.</h4>
+								<h4 class="display-5">Hi!</h3>
+							    <h4 class="display-5">I'm <strong>John McLem Adan</strong>,</h3>
+							    <h5 class="display-6">and I'm a <strong>Full-Stack Web Developer.</strong></h4>
+							    <h5 class="display-6">With every line of code, I strive to make the web a better place.</h4>
 							    <p class="lead">Discover more about <a href="#port"><strong> what I do!</strong></a></p>
 							</div>
 						</div>
@@ -124,10 +133,7 @@
 		</div>
 	</div> -->
 
-
-
-
-	<div id="port">&nbsp;</div>
+	<div id="portfolio">&nbsp;</div>
 
 	<div class="container-fluid">
 		<div class="row">
@@ -136,28 +142,46 @@
 				<div class="jumbotron">
 				  	<div class="container">
 						<div class="text-center">
-							<h2>MY PORTFOLIO</h2>
+							<h2 class="mb-3">MY PORTFOLIO</h2>
+							<div class="row ">
+								<div class="col-lg-3"></div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<div class="btn-container mb-3">
+										  	<button type="submit" class="btn btn-dark">Capstone 1</button> 
+										</div>
+										<div class="btn-container mb-3">
+										  	<button type="submit" class="btn btn-dark">Capstone 2</button> 
+										</div>
+										<div class="btn-container mb-3">
+										  	<button type="submit" class="btn btn-dark">Capstone 3</button> 
+										</div>
+									</div>	
+								</div>
+							</div>	
 						</div>
 					</div>		
 				</div>	
 			</div>
 		</div> 
 		<!-- end of portfolio -->
-	<!-- /div> -->
+	</div>
+
+	<div id="skills">&nbsp;</div>
 				
-	<div class="container-fluid" id="skills">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
 			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
 				<div class="jumbotron jumbotron-fluid">
 				  	<div class="container">
 						<div id="skills">
-							<h2 class="text-center">MY SKILLS</h2>
+							<h2 class="text-center mb-3">MY SKILLS</h2>
 							<div class="container">
 								<div class="row">
 									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
 									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-										<h4 id="html">HTML</h4>
+										<h4 id="skill1">HTML</h4>
 										<div class="progress">
 			  								<div class="progress-bar fadeInRight" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">100%
 			  								</div>
@@ -168,7 +192,7 @@
 								<div class="row">
 									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
 									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-										<h4 id="css">CSS</h4>
+										<h4 id="skill2">CSS</h4>
 										<div class="progress">
 			  								<div class="progress-bar bg-success fadeInLeft" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="80">80%
 			  								</div>
@@ -179,7 +203,7 @@
 								<div class="row">
 									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
 									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-										<h4>Bootstrap</h4>
+										<h4 id="skill3">Bootstrap</h4>
 										<div class="progress">
 			  								<div class="progress-bar bg-warning fadeInRight" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="75">75%
 			  								</div>
@@ -195,14 +219,16 @@
 		</div>
 	</div> <!-- end of skills -->
 
-	<div class="container-fluid" id="contact">
+	<div id="contact">&nbsp;</div>
+
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
 			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
 				<div class="jumbotron jumbotron-fluid">
 				  	<div class="container">	
 						<div>
-							<h2 class="text-center">CONTACT</h2>
+							<h2 class="text-center mb-3">CONTACT</h2>
 							<form>
 								<div class="row">
     								<div class="col-lg-3"></div>
@@ -220,22 +246,44 @@
 									    <label class="text-center" id="emailinput" for="InputEmail">Email</label>
 									    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"  placeholder="Enter email">
 									    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-									    <label for="message">Message</label>
-									    <textarea class="form-control" rows="5" value="Enter message" placeholder="Enter message">Leave me a message...</textarea>
 									  </div>
+									  <div class="form-group">
+									  	<label for="message">Message</label>
+									  	<textarea form="message" id="message" name="message" class="form-control" rows="5"placeholder="Enter message"></textarea>
+									  </div>	
 									  <div class="btn-container">
-									  	<button type="submit" class="btn btn-info">Send me an email!</button> 
+									  	<button type="submit" class="btn btn-dark">Send me an email!</button> 
 									  </div>
-										
 									</div>
-								</div>	  
-							  	
+								</div>	  	
 							</form>	
 						</div>
 					</div>	
 				</div>	
 			</div>
 		</div> <!-- end of contact -->
+	</div>
+
+	<div id="social">&nbsp;</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+				<div class="jumbotron">
+				  	<div class="container text-center">
+						<h2 class="mb-3">LET'S CONNECT!</h2>
+							<a href="https://www.facebook.com/johnmclemadan" class="fa fa-facebook" target="_blank"></a>
+							<a href="https://www.twitter.com/mackyadan" class="fa fa-twitter" target="_blank"></a>
+							<a href="https://www.instagram.com/mackysig" class="fa fa-instagram" target="_blank"></a>
+							<a href="https://www.linkedin.com/in/john-mclem-adan-rmp-6b466810a/" class="fa fa-linkedin" target="_blank"></a>
+							<a href="https://github.com/johnadan" class="fa fa-github" target="_blank"></a>  
+							<a href="https://gitlab.com/johnadan" class="fa fa-gitlab" target="_blank"></a>
+					</div>		
+				</div>	
+			</div>
+		</div> 
+		<!-- end of social -->
 	</div>
 
 	<footer>
