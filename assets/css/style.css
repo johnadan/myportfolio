@@ -230,6 +230,7 @@ footer {
 
 a:link, a:visited {
 	color: white;
+	text-decoration: none;
  }
 
 /*#portfolio, #home, #skills, #contact {
