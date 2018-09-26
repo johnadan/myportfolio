@@ -61,6 +61,7 @@
 .jumbotron {
 	/*border:5px solid white;*/
 	background: rgba(0,0,0,0.2);
+	/*padding:0;*/
 	/*background:rgba(128,128,128,.75);*/
 	/*text-align: justify;*/
 	/*background-color: transparent;*/
@@ -208,7 +209,7 @@ footer {
 	z-index: 1;
 	/*background:url(../videos/programming.mp4);*/
 	text-align: center;
-	height: 80px;
+	height: 75px;
 	/*float: left;*/
 	width: 100%;
 	/*float: right;
@@ -219,6 +220,10 @@ footer {
 body {
 	margin: 0px;
 }
+
+/*#firstjumbo {
+	padding: 3px;
+}*/
 
 #home, #portfolio, #skills, #contact {
 	/*padding: 30px;*/
@@ -273,7 +278,7 @@ a:link, a:visited {
 		  /*height: auto ;*/
 	}
 	#home, #portfolio, #skills, #contact {
-		padding: 30px;
+		/*padding: 30px;*/
 	text-align: center;
 	}
 /*	background-image {
