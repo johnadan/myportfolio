@@ -5,6 +5,22 @@
 	color: white;
 }
 
+#devname, #position {
+	font-family: 'Bungee Inline', cursive;
+font-family: 'Bungee', cursive;
+}
+
+#position {
+	letter-spacing: 3px;
+}
+
+#firstjumbo {
+	padding: 0;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+
 /*@import "bootstrap-social.less";*/
 
 /*body {
@@ -74,6 +90,10 @@
 
 #capstone1, #capstone2, #capstone3 {
 	border-radius: 0;
+}
+
+#thirdjumbo {
+	padding-bottom:35vh;
 }
 
 #portfolio, #home, #skills, #contact, #social {
@@ -264,6 +284,9 @@ a:link, a:visited {
 
 /*Mobile*/
 @media only screen and (max-width: 400px) {
+	#devname, #position, #desc, #discover {
+		text-align: center;
+	}
 	/*@import "bootstrap-social.less";*/
 	#video-background {
 		display: none;
