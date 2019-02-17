@@ -114,6 +114,7 @@ font-family: 'Bungee', cursive;
 	z-index: 1;
 	color: white;
 	overflow: hidden;
+	margin-bottom: 10px;
 }
 
 .btn-container {
@@ -276,6 +277,10 @@ a:link, a:visited {
 /*@media (max-width: 575.98px) {
 	#video-background
 }*/
+
+#divsocial {
+	margin-bottom: 15px;
+}
 
 /*Tablet*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
