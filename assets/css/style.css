@@ -7,7 +7,7 @@
 
 #devname, #position {
 	font-family: 'Bungee Inline', cursive;
-font-family: 'Bungee', cursive;
+	font-family: 'Bungee', cursive;
 }
 
 #position {
@@ -236,6 +236,7 @@ footer {
 	/*float: right;
 	width: 800px;*/
 	/*margin-left: 200px;*/
+	position: absolute;
 }
 
 body {
