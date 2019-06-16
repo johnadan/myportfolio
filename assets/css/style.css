@@ -5,7 +5,8 @@
 	color: white;
 }
 
-#devname, #position {
+#devname, 
+#position {
 	font-family: 'Bungee Inline', cursive;
 	font-family: 'Bungee', cursive;
 }
@@ -74,6 +75,11 @@
   color: white;
 }
 
+/*.fa-dev {
+	background: #000000;
+  color: white;
+}*/
+
 .jumbotron {
 	/*border:5px solid white;*/
 	background: rgba(0,0,0,0.2);
@@ -88,7 +94,9 @@
 	/*background:#596669;*/
 }
 
-#capstone1, #capstone2, #capstone3 {
+#capstone1, 
+#capstone2, 
+#capstone3 {
 	border-radius: 0;
 }
 
@@ -96,7 +104,11 @@
 	padding-bottom:35vh;
 }
 
-#portfolio, #home, #skills, #contact, #social {
+#portfolio, 
+#home, 
+#skills, 
+#contact, 
+#social {
 	/*background: #596669;*/
 	/*background-color: transparent;*/
 	/*background:url(../videos/programming.mp4);*/
@@ -129,7 +141,9 @@ label {
 	/*text-align: justify;*/
 }
 
-#skill1, #skill2, #skill3 {
+#skill1, 
+#skill2, 
+#skill3 {
 	text-align: justify;
 }
 
@@ -214,6 +228,7 @@ textarea {
   background-size: cover;
   transition: 1s opacity;
 }
+
 .stopfade { 
    opacity: .5;
 }
@@ -247,7 +262,10 @@ body {
 	padding: 3px;
 }*/
 
-#home, #portfolio, #skills, #contact {
+#home, 
+#portfolio, 
+#skills, 
+#contact {
 	/*padding: 30px;*/
 	/*box-sizing: border-box;*/
 	/*margin-bottom:20vh;*/
@@ -287,12 +305,13 @@ a:link, a:visited {
 .image-grid-cover {
     width: 100%;
     background-size: cover;
-    min-height: 180px;
+    min-height: 265px;
     position: relative;
     margin-bottom: 30px;
     text-shadow: rgba(0,0,0,.8) 0 1px 0;
     border-radius: 4px;
 }
+
 .image-grid-clickbox {
     position: absolute;
     top: 0;
@@ -305,6 +324,7 @@ a:link, a:visited {
     /*z-index: 20;*/
     background: rgba(0,0,0,.45);
 }
+
 .cover-wrapper {
     font-size: 18px;
     text-align: center;
@@ -315,6 +335,7 @@ a:link, a:visited {
     position: relative;
     top: 80px;
 }
+
 a, a:focus, a:hover {
     text-decoration: none;
     outline: 0;
@@ -329,7 +350,10 @@ a, a:focus, a:hover {
 
 /*Mobile*/
 @media only screen and (max-width: 319px) {
-	#devname, #position, #desc, #discover {
+	#devname, 
+	#position, 
+	#desc, 
+	#discover {
 		text-align: center;
 	}
 	/*@import "bootstrap-social.less";*/
@@ -342,10 +366,13 @@ a, a:focus, a:hover {
 		background-repeat: no-repeat;
 		position: relative;
 		width: auto ;
-		  max-width: 100% ;
+		max-width: 100% ;
 		  /*height: auto ;*/
 	}
-	#home, #portfolio, #skills, #contact {
+	#home, 
+	#portfolio, 
+	#skills, 
+	#contact {
 		/*padding: 30px;*/
 	text-align: center;
 	}
