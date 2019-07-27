@@ -395,4 +395,16 @@ a, a:focus, a:hover {
 	  max-width: 100%;
 	  height: auto;
 	}*/
+	#devname {
+		font-size: 1.5rem;
+	}
+
+	#position {
+		font-size: 1rem;
+	}
+
+	.avatar img-fluid {
+		margin-bottom: 25px;
+	}
+
 }
