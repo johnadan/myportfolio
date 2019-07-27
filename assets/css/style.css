@@ -343,9 +343,21 @@ a, a:focus, a:hover {
 
 /*Mobile*/
 @media only screen and (min-width: 320px) and (max-width: 960px) {
+	
 	footer {
 		height: 100px;
 	}
+
+	body {
+		background-image: url(../images/mb-bg.jpeg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		width: auto ;
+		max-width: 100% ;
+		  /*height: auto ;*/
+	}
+
 } 
 
 /*Mobile*/
@@ -360,6 +372,7 @@ a, a:focus, a:hover {
 	#video-background {
 		display: none;
 	}
+
 	body {
 		background-image: url(../images/mb-bg.jpeg);
 		background-size: cover;
@@ -369,6 +382,7 @@ a, a:focus, a:hover {
 		max-width: 100% ;
 		  /*height: auto ;*/
 	}
+
 	#home, 
 	#portfolio, 
 	#skills, 
