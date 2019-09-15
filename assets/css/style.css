@@ -100,13 +100,11 @@
 	border-radius: 0;
 }
 
-#thirdjumbo {
-	padding-bottom:35vh;
-}
+/* #thirdjumbo {
+	padding-bottom:5vh;
+} */
 
-#portfolio, 
-#home, 
-#skills, 
+#home,  
 #contact, 
 #social {
 	/*background: #596669;*/
@@ -117,6 +115,20 @@
 	z-index: 1;
 	margin-bottom: 20vh;
 	height: 10vh;
+}
+
+#portfolio {
+	text-align: center;
+	z-index: 1;
+	margin-bottom: 5vh;
+	height: 10vh;
+}
+
+#skill {
+	text-align: center;
+	z-index: 1;
+	height: 100vh;
+	margin-bottom: 20vh;
 }
 
 .navbar {
