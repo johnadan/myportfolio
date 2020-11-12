@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- required meta tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0"
-    />
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+    <meta name="Description" content="John McLem Adan's Portfolio">
+    <!-- Add link rel manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- Add meta tag to add theme color -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#393E4A">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#393E4A">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#393E4A">
+    <!-- .Add meta tag to add theme color -->
+    <link rel="shortcut icon" href="/assets/images/faviconportfolio.png">
     <!-- favicon -->
     <link
       rel="shortcut icon"
       type="image/png"
-      href="assets/images/faviconportfolio.png"
-    />
+      href="assets/images/faviconportfolio.png">
     <!-- fontawesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous">
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- bootstrap css -->
     <link
       rel="stylesheet"
       type="text/css"
-      href="assets/css/bootstrap.min.css"
-    />
+      href="assets/css/bootstrap.min.css">
     <!-- animate css -->
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
     <!--  fontawesome -->
@@ -38,22 +45,19 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous">
     <!--  fontawesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous">
     <!--    google fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
     <!-- external css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/style2.css"> -->
     <!-- jquery first -->
     <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
@@ -66,12 +70,7 @@
     <!-- bootstrap js -->
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <!-- LinkedIn badge -->
-    <script
-      type="text/javascript"
-      src="https://platform.linkedin.com/badges/js/profile.js"
-      async
-      defer
-    ></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <title>Web Developer Portfolio - John McLem Adan</title>
@@ -590,3 +589,15 @@
     </footer>
   </body>
 </html>
+
+<script>
+  // CODELAB: Register service worker.
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/serviceworker.js')
+        .then((reg) => {
+          console.log('Service worker registered.', reg);
+        });
+    });
+  }
+</script>

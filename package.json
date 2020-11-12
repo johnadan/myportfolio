@@ -1,0 +1,22 @@
+{
+  "name": "JMA",
+  "version": "1.0.0",
+  "description": "John McLem Adan's Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "live-server --port=8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnadan/myportfolio.git"
+  },
+  "keywords": [
+    "myportfolio"
+  ],
+  "author": "John McLem Adan",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
