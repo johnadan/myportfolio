@@ -62,7 +62,7 @@
     <link rel="stylesheet" type="text/css" href="public/assets/css/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="public/assets/css/style2.css"> -->
     <!-- jquery first -->
-    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="public/assets/js/jquery-3.3.1.min.js"></script>
     <!-- popper js for dropdown -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -70,11 +70,11 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap js -->
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="public/assets/js/bootstrap.min.js"></script>
     <!-- LinkedIn badge -->
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
     <title>Web Developer Portfolio - John McLem Adan</title>
   </head>
   <body>
@@ -575,7 +575,7 @@
   // CODELAB: Register service worker.
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/serviceworker.js')
+      navigator.serviceWorker.register('public/serviceworker.js')
         .then((reg) => {
           console.log('Service worker registered.', reg);
         });
