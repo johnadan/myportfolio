@@ -9,7 +9,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
     <meta name="Description" content="John McLem Adan's Portfolio">
     <!-- Add link rel manifest -->
-    <link rel="manifest" href="public/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <!-- Add meta tag to add theme color -->
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#393E4A">
@@ -18,14 +18,14 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#393E4A">
     <!-- .Add meta tag to add theme color -->
-    <link rel="shortcut icon" href="public/assets/images/faviconportfolio.png">
+    <link rel="shortcut icon" href="assets/images/faviconportfolio.png">
     <!-- apple touch icon -->
-    <link rel="apple-touch-icon" href="public/assets/images/faviconportfolio.png">
+    <link rel="apple-touch-icon" href="assets/images/faviconportfolio.png">
     <!-- favicon -->
     <link
       rel="shortcut icon"
       type="image/png"
-      href="public/assets/images/faviconportfolio.png">
+      href="assets/images/faviconportfolio.png">
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -39,9 +39,9 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="public/assets/css/bootstrap.min.css">
+      href="assets/css/bootstrap.min.css">
     <!-- animate css -->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
     <!--  fontawesome -->
     <link
       rel="stylesheet"
@@ -59,10 +59,10 @@
       href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline"
       rel="stylesheet">
     <!-- external css -->
-    <link rel="stylesheet" type="text/css" href="public/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="public/assets/css/style2.css"> -->
     <!-- jquery first -->
-    <script type="text/javascript" src="public/assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
     <!-- popper js for dropdown -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -70,7 +70,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap js -->
-    <script type="text/javascript" src="public/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <!-- LinkedIn badge -->
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
@@ -84,7 +84,7 @@
     >
       <a class="navbar-brand" href="#home"
         ><img
-          src="public/assets/images/faviconportfolio.png"
+          src="assets/images/faviconportfolio.png"
           width="60"
           height="30"
           alt="jma logo"
@@ -126,7 +126,7 @@
 
     <!--Video Section-->
     <video autoplay loop id="video-background" muted plays-inline>
-      <source src="public/assets/videos/programming.mp4" type="video/mp4" />
+      <source src="assets/videos/programming.mp4" type="video/mp4" />
     </video>
     <!-- end of video background -->
 
@@ -141,7 +141,7 @@
               <div class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-                  <img class="avatar img-fluid" src="public/assets/images/me2.png" />
+                  <img class="avatar img-fluid" src="assets/images/me2.png" />
                 </div>
                 <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 text-left">
                   <h3 id="devname" class="display-4">
@@ -177,7 +177,7 @@
             <div class="image-grid-item">
               <div
                 style="
-                  background-image: url(public/assets/images/capstone1preview.png);
+                  background-image: url(assets/images/capstone1preview.png);
                 "
                 class="image-grid-cover"
               >
@@ -198,7 +198,7 @@
             <div class="image-grid-item">
               <div
                 style="
-                  background-image: url(public/assets/images/capstone2preview.png);
+                  background-image: url(assets/images/capstone2preview.png);
                 "
                 class="entry-cover image-grid-cover has-image"
               >
@@ -219,7 +219,7 @@
             <div class="image-grid-item">
               <div
                 style="
-                  background-image: url(public/assets/images/capstone3preview.png);
+                  background-image: url(assets/images/capstone3preview.png);
                 "
                 class="entry-cover image-grid-cover has-image"
               >
@@ -259,7 +259,7 @@
               </div> -->
 
               <img
-                src="public/assets/images/cba95865.video.gif"
+                src="assets/images/cba95865.video.gif"
                 alt="coder type and drink coffee"
               />
             </div>
@@ -575,7 +575,7 @@
   // CODELAB: Register service worker.
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('public/serviceworker.js')
+      navigator.serviceWorker.register('serviceworker.js')
         .then((reg) => {
           console.log('Service worker registered.', reg);
         });

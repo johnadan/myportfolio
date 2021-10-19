@@ -1,1 +1,10 @@
 /node_modules
+/app
+/gradle
+.gradle/
+android.keystore
+build.gradle
+gradle.properties
+gradlew
+gradlew.bat
+settings.gradle
