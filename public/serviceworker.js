@@ -3,6 +3,7 @@
 let cn = '1.22';
 let cacheWhiteList = ['1.22'];
 let assetsList = [
+    "/",
     'index.html',
     '/assets/js/jquery.min.js',
     '/assets/js/lodash.min.js',
