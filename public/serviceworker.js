@@ -70,6 +70,18 @@ self.addEventListener('install', event => {
     );
 });
 
+// Remove Old Caches
+self.addEventListener('activate', (event) => {
+    event.waitUntil(
+        caches.keys().then((keyList) => {
+            return Promise.all(keyList.map((key) => {
+                if (cacheWhiteList.indexOf(key) === -1) {
+                    return caches.delete(key);
+                }
+            }));
+        })
+    );
+}); 
 
 self.addEventListener('fetch', event => {
     event.respondWith(
@@ -96,16 +108,3 @@ self.addEventListener('fetch', event => {
 
     );
 });
-
-// Remove Old Caches
-self.addEventListener('activate', (event) => {
-    event.waitUntil(
-        caches.keys().then((keyList) => {
-            return Promise.all(keyList.map((key) => {
-                if (cacheWhiteList.indexOf(key) === -1) {
-                    return caches.delete(key);
-                }
-            }));
-        })
-    );
-}); 
