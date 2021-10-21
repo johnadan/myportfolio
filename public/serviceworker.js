@@ -1,5 +1,5 @@
 'use strict';
-
+// Use a cacheName for cache versioning
 let cn = '1.22';
 let cacheWhiteList = ['1.22'];
 let assetsList = [
@@ -58,8 +58,10 @@ let assetsList = [
 ];
 
 // Install Event
+// During the installation phase, you'll usually want to cache static assets.
 self.addEventListener('install', event => {
     // Open the cache
+    // Once the service worker is installed, go ahead and fetch the resources to make this work offline.
     event.waitUntil(caches.open(cn)
         .then(cache => {
             // Fetch all the assets from the array
@@ -83,7 +85,9 @@ self.addEventListener('activate', (event) => {
     );
 }); 
 
+// Event listener for retrieving data
 self.addEventListener('fetch', event => {
+    // … either respond with the cached object or go ahead and fetch the actual URL
     event.respondWith(
         caches.match(event.request)
             .then(response => {
@@ -98,7 +102,7 @@ self.addEventListener('fetch', event => {
             //     }
 
             // })
-
+            // if not found in cache, return default offline content
             .catch(() => {
                 return caches.open(cn)
                     .then((cache) => {
