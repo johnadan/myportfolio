@@ -573,11 +573,17 @@
 
 <script>
   // CODELAB: Register service worker.
+  // Check for browser support of service worker
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('serviceworker.js')
         .then((reg) => {
+          // Successful registration
           console.log('Service worker registered.', reg);
+        })
+        .catch(function(err) {
+        // Failed registration, service worker won’t be installed
+        console.log('Whoops. Service worker registration failed, error:', err);
         });
     });
   }
