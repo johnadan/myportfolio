@@ -66,6 +66,7 @@ self.addEventListener('install', event => {
         .then(cache => {
             // Fetch all the assets from the array
             return cache.addAll(assetsList);
+            //Takes an array of URLs, retrieves them, and adds the resulting response objects to the given cache.
         }).then(() => {
             console.log("done caching");
         })
@@ -76,6 +77,7 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', (event) => {
     event.waitUntil(
         caches.keys().then((keyList) => {
+            //Returns a Promise that resolves to an array of Cache keys.
             return Promise.all(keyList.map((key) => {
                 if (cacheWhiteList.indexOf(key) === -1) {
                     return caches.delete(key);
@@ -107,6 +109,7 @@ self.addEventListener('fetch', event => {
                 return caches.open(cn)
                     .then((cache) => {
                         return cache.match('index.html');
+                        //Returns a Promise that resolves to the response associated with the first matching request in the Cache object.
                     });
             })
 
